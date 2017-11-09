@@ -388,15 +388,15 @@ import QuartzCore
             self.offLabel.frame = CGRect(x: frame.size.height, y: 0, width: frame.size.width - frame.size.height, height: frame.size.height)
             
             // thumb
-            let normalKnobWidth = frame.size.height - 2
-            if self.on {
-                thumbView.frame = CGRect(x: frame.size.width - (normalKnobWidth + 1), y: 1, width: frame.size.height - 2, height: normalKnobWidth)
-                thumbImageView.frame = CGRect(x: frame.size.width - normalKnobWidth, y: 0, width: normalKnobWidth, height: normalKnobWidth)
-            }
-            else {
-                thumbView.frame = CGRect(x: 1, y: 1, width: normalKnobWidth, height: normalKnobWidth)
-                thumbImageView.frame = CGRect(x: 0, y: 0, width: normalKnobWidth, height: normalKnobWidth)
-            }
+//             let normalKnobWidth = frame.size.height - 2
+//             if self.on {
+//                 thumbView.frame = CGRect(x: frame.size.width - (normalKnobWidth + 1), y: 1, width: frame.size.height - 2, height: normalKnobWidth)
+//                 thumbImageView.frame = CGRect(x: frame.size.width - normalKnobWidth, y: 0, width: normalKnobWidth, height: normalKnobWidth)
+//             }
+//             else {
+//                 thumbView.frame = CGRect(x: 1, y: 1, width: normalKnobWidth, height: normalKnobWidth)
+//                 thumbImageView.frame = CGRect(x: 0, y: 0, width: normalKnobWidth, height: normalKnobWidth)
+//             }
             
             thumbView.layer.cornerRadius = self.isRounded ? (frame.size.height * 0.5) - 1 : 2
             thumbView.layer.shadowPath = UIBezierPath(roundedRect: thumbView.bounds, cornerRadius: thumbView.layer.cornerRadius).cgPath
